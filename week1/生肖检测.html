@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<meta charset="utf-8">
+<script language="javascript">
+function whichAnimal(){
+var year = document.all("year").value;
+var animal = ["申猴","酉鸡","戌狗","亥猪","子鼠","丑牛","寅虎","卯兔","辰龙","巳蛇","午马","未羊"];
+var index = year%12;
+//document.write(year+"年是"+animal[index]+"年");
+alert(year+"年是"+animal[index]+"年");
+}
+</script>
+</HEAD>
+<BODY>
+<form method="" action="">
+请输入年份:<input type="text" name="year">
+ <input type="button" value="确定" onclick="whichAnimal()"/>
+
+</form>
+</BODY>
+</HTML>
